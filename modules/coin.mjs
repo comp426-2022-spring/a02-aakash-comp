@@ -15,7 +15,13 @@
  */
 
 function coinFlip() {
-
+  var num = Math.floor(Math.random() * 2)
+  if(num == 0){
+    return "heads"
+  }
+  else{
+    return "tails"
+  }
 }
 
 /** Multiple coin flips
@@ -38,6 +44,16 @@ function coinFlip() {
  */
 
 function coinFlips(flips) {
+  var flip = flips
+  const list = []
+  var index = 0;
+
+  while(flip != 0){
+    list[index] = coinFlip();
+    flip--
+    index++
+  }
+  return list
 
 }
 
@@ -55,6 +71,18 @@ function coinFlips(flips) {
  */
 
 function countFlips(array) {
+  var num_heads = 0;
+  var num_tails = o;
+
+  for(results in array){
+    if(results == "heads"){
+      num_heads++
+    }
+    else{
+      num_tails++
+    }
+  }
+  return {"heads": num_heads, "tails" : num_tails}
 
 }
 
@@ -70,6 +98,13 @@ function countFlips(array) {
  */
 
 function flipACoin(call) {
+  var result = coinFlip()
+  if(result == call){
+    return {"call": call, "flip": result, "result": 'win'}
+  }
+  else{
+    return {"call": call, "flip": result, "result": 'lose'}
+  }
 
 }
 
@@ -78,3 +113,5 @@ function flipACoin(call) {
  * 
  * Export all of your named functions
 */
+
+export {coinFlip, coinFlips, countFlips, flipACoin}
