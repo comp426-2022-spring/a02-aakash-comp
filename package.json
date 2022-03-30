@@ -8,8 +8,6 @@
     "flips": "node flips.js",
     "guess": "node guess-flip.js",
     "test": "echo \"Error: no test specified\" && exit 1"
-    
-
   },
   "repository": {
     "type": "git",
@@ -21,7 +19,8 @@
     "url": "https://github.com/comp426-2022-spring/a02-aakash-comp/issues"
   },
   "homepage": "https://github.com/comp426-2022-spring/a02-aakash-comp#readme",
-
-  "type": "module"
-
+  "type": "module",
+  "dependencies": {
+    "minimist": "^1.2.6"
+  }
 }

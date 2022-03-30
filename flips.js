@@ -4,11 +4,13 @@ import {coinFlip, countFlips, coinFlips} from './modules/coin.mjs'
 
 // Call the coinFlip function and put the return into STDOUT
 
-var args = process.argv
-const array = []
+import minimist from "minimist";
 
+const argv = (minimist)(process.argv.slice(2));
+argv['number'];
+const numflips = argv.number || 1;
 
-array = coinFlips(args[3])
+var array = coinFlips(numflips);
 
-console.log(array)
-console.log(countFlips(array))
+console.log(array);
+console.log(countFlips(array));

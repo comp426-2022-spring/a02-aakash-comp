@@ -72,9 +72,9 @@ function coinFlips(flips) {
 
 function countFlips(array) {
   var num_heads = 0;
-  var num_tails = o;
+  var num_tails = 0;
 
-  for(results in array){
+  for(const results of array){
     if(results == "heads"){
       num_heads++
     }
