@@ -15,3 +15,4 @@ var array = coinFlips(numflips);
 
 console.log(array);
 console.log(countFlips(array));
+//free
