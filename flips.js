@@ -14,5 +14,4 @@ const numflips = argv.number || 1;
 var array = coinFlips(numflips);
 
 console.log(array);
-console.log(countFlips(array));
-//free
+console.log(countFlips(array))
