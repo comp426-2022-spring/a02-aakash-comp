@@ -8,6 +8,7 @@ import minimist from "minimist";
 
 const argv = (minimist)(process.argv.slice(2));
 argv['number'];
+
 const numflips = argv.number || 1;
 
 var array = coinFlips(numflips);
