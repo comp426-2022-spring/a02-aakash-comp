@@ -18,4 +18,5 @@ else if (guess == "heads" ){
 else{
     console.log("Error: wrong input")
     console.log("Usage: node guess-flip --call=[heads|tails]")
+    //yes
 }
